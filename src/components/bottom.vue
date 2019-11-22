@@ -5,7 +5,17 @@
   	  <h1 class="title">{{title}}</h1>
   	  <span class="border"></span>
   	  <div class="content">
-  	    <img src="../common/images/code.png">
+		<div class="imgbox">
+			<div class="left">
+				<div v-on:mouseenter="getImage1"><img src="../common/images/wechaticon.png"></div>
+				<div v-on:mouseenter="getImage2"><img src="../common/images/qqicon.png"></div>
+				<div>三</div>
+			</div>
+			<div class="right">
+				<img v-show="showWechat" src="../common/images/test1.jpg">
+				<img v-show="!showWechat" src="../common/images/test2.jpg">
+			</div>
+		</div>
   	    <dl>
   	      <dt>Contact By Email</dt>
   	      <dd>Mail1: <a href="mailto:info@example.com">info@example1.com</a></dd>
@@ -18,13 +28,23 @@
 </template>
 
 <script>
+
 export default {
   name: 'bottom',
   data () {
     return {
     	title: '联系我',
-    	desc: '© 2018 Preface . All rights reserved | Design by cisco lai.'
-    }
+		desc: '© 2018 Preface . All rights reserved | Design by cisco lai.',
+		showWechat:true
+	}
+  },
+  methods:{
+	  getImage1(){
+		  this.showWechat = true
+	  },
+	  getImage2(){
+		  this.showWechat = !this.showWechat 
+	  },
   }
 }
 </script>
@@ -39,9 +59,38 @@ export default {
 	.border{display:block;width: 20%;height: 1px;position:relative;margin:0 auto 30px;background: #8C8989;}
 	.border:after{position: absolute;top: 0;left: 30%;content: " ";width: 40%;height: 5px;margin-top:-2px;background: #03a9f4;}
 
-	.content{width:45%;margin:0 auto;background: #f5f5f5;border-radius: 10px; box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
-	.content img{width: 40%;height: auto;margin: 30px 0;}
-	.content dl{border-top: 1px solid rgb(214, 212, 212);position: relative;padding-bottom: 20px;}
+	.content{
+		width:45%;
+		margin:0 auto;
+		background: #f5f5f5;
+		border-radius: 10px;
+	 	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+	.imgbox{
+		display: flex;
+	}
+	.left{
+		display: inline-block;
+		width: 50%;height: auto;
+		display: flex;
+		justify-content:space-around;
+	}
+	.left div{
+		width: 80px;
+		height: 80px;
+		border-radius: 4em;
+		background-color: black
+	}
+	.left div:hover{
+		background-color:blue
+	}
+	.right{
+		display: inline-block;
+		width: 50%;height: auto;
+		border:1px black solid;
+	}
+	.content img{width: 50%;height: auto;margin: 15% 0;}
+	.content dl{border-top: 1px solid rgb(214, 212, 212);position: relative;padding-bottom: 20px;border:1px black solid;}
 	.content dl:after{position: absolute;top: 8%;left: 48%;content: "";width: 16px;height: 16px;background: url('../common/images/email.png') no-repeat;background-size: 100% auto;}
 	.content dt{font-size: 16px;margin: 30px 0 10px;}
 	.content dd{font-size: 18px;color: #999;margin-top: 10px;}

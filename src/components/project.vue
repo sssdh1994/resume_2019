@@ -5,10 +5,10 @@
       <h1 class="title">{{title}}</h1>
       <span class="border"></span>
       <ul>
-        <li><img src="../common/images/web1.jpg" alt="项目1"></li>
-        <li><img src="../common/images/web1.jpg" alt="项目2"></li>
-        <li><img src="../common/images/web1.jpg" alt="项目3"></li>
-        <li><img src="../common/images/web1.jpg" alt="项目4"></li>
+        <li @click="showProject"><img src="../common/images/web1.jpg" alt="项目1"></li>
+        <li @click="showProject"><img src="../common/images/web1.jpg" alt="项目2"></li>
+        <li @click="showProject"><img src="../common/images/web1.jpg" alt="项目3"></li>
+        <li @click="showProject"><img src="../common/images/web1.jpg" alt="项目4"></li>
         <div class="clearfix"></div>
       </ul>
     </div>
@@ -22,13 +22,28 @@ export default {
     return {
       title: '我的项目'
     }
+  },
+  methods:{
+    showProject(){
+      this.$router.push({
+        name: "ShowProject",
+      });
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .project{height: auto;width: 100%;margin: 0 auto;background-color: #fff;text-align: center;}
+  .project{
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    background-image: url(../common/images/banner.jpg);
+    background-attachment: fixed;
+  }
   .container{height: auto;max-width: 1200px;margin: 0 auto;padding: 4% 0;}
   .tip{display:inline-block;position:relative;padding:6px 20px;margin:0 auto 10px;font-size: 20px;background:#03a9f4;color: #fff;}
   .tip:after{position:absolute;width: 0;height: 0;left:42%;bottom:-10px;content: '';border-style: solid;border-width: 10px 10px 0 10px;border-color: #03a9f4 transparent;}
