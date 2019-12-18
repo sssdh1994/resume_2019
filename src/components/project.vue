@@ -5,10 +5,9 @@
       <h1 class="title">{{title}}</h1>
       <span class="border"></span>
       <ul>
-        <li @click="showProject"><img src="../common/images/web1.jpg" alt="项目1"></li>
-        <li @click="showProject"><img src="../common/images/web1.jpg" alt="项目2"></li>
-        <li @click="showProject"><img src="../common/images/web1.jpg" alt="项目3"></li>
-        <li @click="showProject"><img src="../common/images/web1.jpg" alt="项目4"></li>
+        <li v-for="item in projectData" v-bind:key="item.title" @click="showProject">
+          <img :src="item.src">
+        </li>
         <div class="clearfix"></div>
       </ul>
     </div>
@@ -20,7 +19,14 @@ export default {
   name: 'project',
   data () {
     return {
-      title: '我的项目'
+      title: '我的项目',
+      projectData:[
+        {title:'项目1',src:"/static/test3.jpg"},
+        {title:'项目2',src:"/static/test3.jpg"},
+        {title:'项目3',src:"/static/test3.jpg"},
+        {title:'项目4',src:"/static/test3.jpg"}
+      ],
+
     }
   },
   methods:{
@@ -47,7 +53,7 @@ export default {
   .container{height: auto;max-width: 1200px;margin: 0 auto;padding: 4% 0;}
   .tip{display:inline-block;position:relative;padding:6px 20px;margin:0 auto 10px;font-size: 20px;background:#03a9f4;color: #fff;}
   .tip:after{position:absolute;width: 0;height: 0;left:42%;bottom:-10px;content: '';border-style: solid;border-width: 10px 10px 0 10px;border-color: #03a9f4 transparent;}
-  .title{padding: 6px 0 10px;font-family: 'Overlock', cursive;color: #2F2C06;font-size: 36px;}
+  .title{padding: 6px 0 10px;font-family: 'Overlock', cursive;color: rgba(255,255,255,0.7);font-size: 36px;}
   .border{display:block;width: 20%;height: 1px;position:relative;margin:0 auto 30px;background: #8C8989;}
   .border:after{position: absolute;top: 0;left: 30%;content: " ";width: 40%;height: 5px;margin-top:-2px;background: #03a9f4;}
 

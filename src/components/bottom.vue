@@ -28,7 +28,7 @@
 </template>
 
 <script>
-
+ 
 export default {
   name: 'bottom',
   data () {
@@ -79,10 +79,17 @@ export default {
 		width: 80px;
 		height: 80px;
 		border-radius: 4em;
-		background-color: black
+		background-color: grey;
+		position: relative;
+		top:50px;
+	}
+	.left div img{
+		width: 40px;
+		height: 40px;
+		margin: 20px;
 	}
 	.left div:hover{
-		background-color:blue
+		background-color:#87CEFA
 	}
 	.right{
 		display: inline-block;
