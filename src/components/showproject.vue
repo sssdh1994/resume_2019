@@ -1,30 +1,47 @@
 <template>
-  <div class="about">
-  	<div class="container">
-  	  <span class="tip">WHO AM I</span>
-  	  <h1 class="title">{{title}}</h1>
-  	  <span class="border one"></span>
-  	  <div class="a_info">
-  	  	<swiper :options="swiperOption" ref="mySwiper">
-  	      <!-- slides -->
-  	      <swiper-slide>
-  	        <p>您在找前端工程师？？</p>
-  	      </swiper-slide>
-  	      <swiper-slide>
-  	        <p>您真的来对了！！</p>
-  	      </swiper-slide>
-  	      <swiper-slide>
-  	        <p>我就是一名热爱前端开发，为前端痴狂的coder。</p>
-  	      </swiper-slide>
-  	      <swiper-slide>
-  	        <p>I Am The One!!</p>
-  	      </swiper-slide>
-  	      <div class="swiper-pagination" slot="pagination"></div>
-	        <div class="swiper-button-prev" slot="button-prev"></div>
-	        <div class="swiper-button-next" slot="button-next"></div>
-  	    </swiper>
-  	  </div>
-  	</div>
+  <div>
+    <div  style="height: 800px">
+      <!-- swiper1 -->
+      <swiper :options="swiperOptionTop" class="gallery-top" ref="swiperTop">
+        <swiper-slide class="slide-1"></swiper-slide>
+        <swiper-slide class="slide-2"></swiper-slide>
+        <swiper-slide class="slide-3"></swiper-slide>
+        <swiper-slide class="slide-4"></swiper-slide>
+        <swiper-slide class="slide-5"></swiper-slide>
+        <swiper-slide class="slide-6"></swiper-slide>
+        <swiper-slide class="slide-7"></swiper-slide>
+        <swiper-slide class="slide-8"></swiper-slide>
+        <swiper-slide class="slide-9"></swiper-slide>
+        <swiper-slide class="slide-10"></swiper-slide>
+        <swiper-slide class="slide-11"></swiper-slide>
+        <swiper-slide class="slide-12"></swiper-slide>
+        <swiper-slide class="slide-13"></swiper-slide>
+        <swiper-slide class="slide-14"></swiper-slide>
+        <swiper-slide class="slide-15"></swiper-slide>
+
+        <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
+        <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
+      </swiper>
+      <!-- swiper2 Thumbs -->
+      <swiper :options="swiperOptionThumbs" class="gallery-thumbs" ref="swiperThumbs">
+        <swiper-slide class="slide-1"></swiper-slide>
+        <swiper-slide class="slide-2"></swiper-slide>
+        <swiper-slide class="slide-3"></swiper-slide>
+        <swiper-slide class="slide-4"></swiper-slide>
+        <swiper-slide class="slide-5"></swiper-slide>
+        <swiper-slide class="slide-6"></swiper-slide>
+        <swiper-slide class="slide-7"></swiper-slide>
+        <swiper-slide class="slide-8"></swiper-slide>
+        <swiper-slide class="slide-9"></swiper-slide>
+        <swiper-slide class="slide-10"></swiper-slide>
+        <swiper-slide class="slide-11"></swiper-slide>
+        <swiper-slide class="slide-12"></swiper-slide>
+        <swiper-slide class="slide-13"></swiper-slide>
+        <swiper-slide class="slide-14"></swiper-slide>
+        <swiper-slide class="slide-15"></swiper-slide>
+
+      </swiper>
+    </div>
   </div>
 </template>
 
@@ -32,45 +49,111 @@
 import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 export default {
-  name: 'about',
   data () {
     return {
-      title: '自我简述',
-      swiperOption: {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        },
+      swiperOptionTop: {
+        spaceBetween: 10,
+        loop: true,
+        loopedSlides: 5, //looped slides should be the same
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
         }
+      },
+      swiperOptionThumbs: {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        touchRatio: 0.2,
+        loop: true,
+        loopedSlides: 5, //looped slides should be the same
+        slideToClickedSlide: true,
       }
     }
   },
   components: {
     swiper,
     swiperSlide
+  },
+  mounted() {
+    this.$nextTick(() => {
+      const swiperTop = this.$refs.swiperTop.swiper
+      const swiperThumbs = this.$refs.swiperThumbs.swiper
+      swiperTop.controller.control = swiperThumbs
+      swiperThumbs.controller.control = swiperTop
+    })
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-	.about{height: auto;width: 100%;margin: 0 auto;background-color: #f5f5f5;text-align: center;}
-  .container{height: auto;max-width: 1200px;margin: 0 auto;padding:4% 0;}
-  .tip{display:inline-block;position:relative;padding:6px 20px;margin:0 auto 10px;font-size: 20px;background:#03a9f4;color: #fff;}
-  .tip:after{position:absolute;width: 0;height: 0;left:42%;bottom:-10px;content: '';border-style: solid;border-width: 10px 10px 0 10px;border-color: #03a9f4 transparent;}
-  .title{padding: 6px 0 10px;font-family: 'Overlock', cursive;color: #2F2C06;font-size: 36px;}
-  .border{display:block;width: 20%;height: 1px;position:relative;margin:0 auto 30px;background: #8C8989;}
-  .border:after{position: absolute;top: 0;left: 30%;content: " ";width: 40%;height: 5px;margin-top:-2px;background: #03a9f4;}
-  .a_info{font-size: 20px;}
-  .swiper-container{width: 100%;height: 300px;line-height: 300px;overflow: hidden;text-align: center;}
-  .swiper-pagination{top:46%;}
+  .swiper-container {
+    background-color: #000;
+  }
+  swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+  .slide-1 {
+    background-image:url('../common/images/vuecms/1.png');
+  }
+  .slide-2 {
+    background-image:url('../common/images/vuecms/2.png');
+  }
+  .slide-3 {
+    background-image:url('../common/images/vuecms/3.png');
+  }
+  .slide-4 {
+    background-image:url('../common/images/vuecms/4.png');
+  }
+  .slide-5 {
+    background-image:url('../common/images/vuecms/5.png');
+  }
+  .slide-6 {
+    background-image:url('../common/images/vuecms/6.png');
+  }
+  .slide-7 {
+    background-image:url('../common/images/vuecms/7.png');
+  }
+  .slide-8 {
+    background-image:url('../common/images/vuecms/8.png');
+  }
+  .slide-9 {
+    background-image:url('../common/images/vuecms/9.png');
+  }
+  .slide-60 {
+    background-image:url('../common/images/vuecms/10.png');
+  }
+  .slide-11 {
+    background-image:url('../common/images/vuecms/11.png');
+  }
+  .slide-12 {
+    background-image:url('../common/images/vuecms/12.png');
+  }
+  .slide-13 {
+    background-image:url('../common/images/vuecms/13.png');
+  }
+  .slide-14 {
+    background-image:url('../common/images/vuecms/14.png');
+  }
+  .slide-15 {
+    background-image:url('../common/images/vuecms/15.png');
+  }
+  .gallery-top {
+    height: 80%!important;
+    width: 100%;
+  }
+  .gallery-thumbs {
+    height: 20%!important;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+  .gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+  .gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+  }
 </style>
