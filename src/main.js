@@ -10,9 +10,11 @@ import '@/common/css/base.css'
 import VueParticles from 'vue-particles'
 // import VueAwesomeSwiper from 'vue-awesome-swiper'
 // import 'swiper/dist/css/swiper.css'
-
+import mybutton from './components/index.js'
 Vue.use(VueParticles)
 // Vue.use(VueAwesomeSwiper)
+Vue.component('mybutton', mybutton);
+// Vue.use(mybutton)
 
 Vue.config.productionTip = false // 线上改为true
 Vue.config.debug = true // 开启debug模式

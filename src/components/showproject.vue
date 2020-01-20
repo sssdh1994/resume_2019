@@ -41,13 +41,17 @@
         <swiper-slide class="slide-15"></swiper-slide>
 
       </swiper>
+
+      <mybutton></mybutton>
     </div>
   </div>
 </template>
 
 <script>
+import mybutton from './index.js'
 import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
+
 export default {
   data () {
     return {
