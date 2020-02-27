@@ -5,7 +5,7 @@
       <h1 class="title">{{title}}</h1>
       <span class="border"></span>
       <ul>
-        <li v-for="item in projectData" v-bind:key="item.title" @click="showProject">
+        <li v-for="(item,index) in projectData" v-bind:key="item.title" @click="showProject(index)">
           <img :src="item.src">
         </li>
         <div class="clearfix"></div>
@@ -30,9 +30,10 @@ export default {
     }
   },
   methods:{
-    showProject(){
+    showProject(index){
       this.$router.push({
         name: "ShowProject",
+        query:{index:index}
       });
     }
   }

@@ -1,11 +1,16 @@
 <template>
-    <div>
-        我是按钮
+    <div @click='goBackPage'>
+        返回上一页
     </div>
 </template>
  
 <script>
     export default {
+        methods:{
+            goBackPage(){
+                this.$router.back();
+            }
+        }
     }
 </script>
  

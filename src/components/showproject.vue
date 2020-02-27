@@ -3,42 +3,15 @@
     <div  style="height: 800px">
       <!-- swiper1 -->
       <swiper :options="swiperOptionTop" class="gallery-top" ref="swiperTop">
-        <swiper-slide class="slide-1"></swiper-slide>
-        <swiper-slide class="slide-2"></swiper-slide>
-        <swiper-slide class="slide-3"></swiper-slide>
-        <swiper-slide class="slide-4"></swiper-slide>
-        <swiper-slide class="slide-5"></swiper-slide>
-        <swiper-slide class="slide-6"></swiper-slide>
-        <swiper-slide class="slide-7"></swiper-slide>
-        <swiper-slide class="slide-8"></swiper-slide>
-        <swiper-slide class="slide-9"></swiper-slide>
-        <swiper-slide class="slide-10"></swiper-slide>
-        <swiper-slide class="slide-11"></swiper-slide>
-        <swiper-slide class="slide-12"></swiper-slide>
-        <swiper-slide class="slide-13"></swiper-slide>
-        <swiper-slide class="slide-14"></swiper-slide>
-        <swiper-slide class="slide-15"></swiper-slide>
+        <swiper-slide v-for="item in items" :key="item.id" :class="item.class"></swiper-slide>
+   
 
         <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
         <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
       </swiper>
       <!-- swiper2 Thumbs -->
       <swiper :options="swiperOptionThumbs" class="gallery-thumbs" ref="swiperThumbs">
-        <swiper-slide class="slide-1"></swiper-slide>
-        <swiper-slide class="slide-2"></swiper-slide>
-        <swiper-slide class="slide-3"></swiper-slide>
-        <swiper-slide class="slide-4"></swiper-slide>
-        <swiper-slide class="slide-5"></swiper-slide>
-        <swiper-slide class="slide-6"></swiper-slide>
-        <swiper-slide class="slide-7"></swiper-slide>
-        <swiper-slide class="slide-8"></swiper-slide>
-        <swiper-slide class="slide-9"></swiper-slide>
-        <swiper-slide class="slide-10"></swiper-slide>
-        <swiper-slide class="slide-11"></swiper-slide>
-        <swiper-slide class="slide-12"></swiper-slide>
-        <swiper-slide class="slide-13"></swiper-slide>
-        <swiper-slide class="slide-14"></swiper-slide>
-        <swiper-slide class="slide-15"></swiper-slide>
+        <swiper-slide v-for="item in items" :key="item.id" :class="item.class"></swiper-slide>
 
       </swiper>
 
@@ -55,6 +28,23 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
 export default {
   data () {
     return {
+      items:[
+        {class:"slide-1"},
+        {class:"slide-2"},
+        {class:"slide-3"},
+        {class:"slide-4"},
+        {class:"slide-5"},
+        {class:"slide-6"},
+        {class:"slide-7"},
+        {class:"slide-8"},
+        {class:"slide-9"},
+        {class:"slide-10"},
+        {class:"slide-11"},
+        {class:"slide-12"},
+        {class:"slide-13"},
+        {class:"slide-14"},
+        {class:"slide-15"}
+      ],
       swiperOptionTop: {
         spaceBetween: 10,
         loop: true,
@@ -77,6 +67,82 @@ export default {
   components: {
     swiper,
     swiperSlide
+  },
+  created(){
+    console.log(this.$route.query.index)
+    if(this.$route.query.index===0){
+      this.items = [
+        {class:"slide-1"},
+        {class:"slide-2"},
+        {class:"slide-3"},
+        {class:"slide-4"},
+        {class:"slide-5"},
+        {class:"slide-6"},
+        {class:"slide-7"},
+        {class:"slide-8"},
+        {class:"slide-9"},
+        {class:"slide-10"},
+        {class:"slide-11"},
+        {class:"slide-12"},
+        {class:"slide-13"},
+        {class:"slide-14"},
+        {class:"slide-15"}
+      ]
+    }else if(this.$route.query.index===1){
+      this.items = [
+        {class:"slide-1"},
+        {class:"slide-2"},
+        {class:"slide-3"},
+        {class:"slide-4"},
+        {class:"slide-5"},
+        {class:"slide-6"},
+        {class:"slide-7"},
+        {class:"slide-8"},
+        {class:"slide-9"},
+        {class:"slide-10"},
+        {class:"slide-11"},
+        {class:"slide-12"},
+        {class:"slide-13"},
+        {class:"slide-14"},
+        {class:"slide-15"}
+      ]
+    }else if(this.$route.query.index===2){
+      this.items = [
+        {class:"slide-1"},
+        {class:"slide-2"},
+        {class:"slide-3"},
+        {class:"slide-4"},
+        {class:"slide-5"},
+        {class:"slide-6"},
+        {class:"slide-7"},
+        {class:"slide-8"},
+        {class:"slide-9"},
+        {class:"slide-10"},
+        {class:"slide-11"},
+        {class:"slide-12"},
+        {class:"slide-13"},
+        {class:"slide-14"},
+        {class:"slide-15"}
+      ]
+    }else{
+      this.items = [
+        {class:"slide-1"},
+        {class:"slide-2"},
+        {class:"slide-3"},
+        {class:"slide-4"},
+        {class:"slide-5"},
+        {class:"slide-6"},
+        {class:"slide-7"},
+        {class:"slide-8"},
+        {class:"slide-9"},
+        {class:"slide-10"},
+        {class:"slide-11"},
+        {class:"slide-12"},
+        {class:"slide-13"},
+        {class:"slide-14"},
+        {class:"slide-15"}
+      ]
+    }
   },
   mounted() {
     this.$nextTick(() => {
