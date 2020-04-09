@@ -8,37 +8,37 @@
   	  	<li>
   	  		<div class="content_left tx_right">
   	  		  <span class="s1"></span>
-  	  		  <h4>2014 - 2015 </h4>
+  	  		  <h4>2012 - 2016 </h4>
   	  		</div>
   	  		<div class="content_right tx_left">
-  	  		  <h4>公司名1</h4>
-  	  		  <p>相关项目详细介绍...</p>
+  	  		  <h4 class="company">浙江科技学院</h4>
+  	  		  <p>本科4年学习</p>
   	  		</div>
   	  		<div class="clearfix"></div>
   	  	</li>
   	  	<li>
   	  		<div class="content_left tx_right">
   	  		  <span class="s2"></span>
-  	  		  <h4>2015 - 2016 </h4>
+  	  		  <h4>2018 - 2018 </h4>
   	  		</div>
   	  		<div class="content_right tx_left">
-  	  		  <h4>公司名2</h4>
-  	  		  <p>相关项目详细介绍...</p>
+  	  		  <h4 class="company">杭州大喵科技有限公司</h4>
+  	  		  <p>上海一派官网</p>
   	  		</div>
   	  		<div class="clearfix"></div>
   	  	</li>
   	  	<li>
   	  		<div class="content_left tx_right">
   	  		  <span class="s1"></span>
-  	  		  <h4>2016 - 2017 </h4>
+  	  		  <h4>2018 - 2020 </h4>
   	  		</div>
   	  		<div class="content_right tx_left">
-  	  		  <h4>公司名3</h4>
-  	  		  <p>相关项目详细介绍...</p>
+  	  		  <h4 class="company">杭州至远科技有限公司</h4>
+  	  		  <p>cms管理后台、商城微信小程序</p>
   	  		</div>
   	  		<div class="clearfix"></div>
   	  	</li>
-  	  	<li>
+  	  	<!-- <li>
   	  		<div class="content_left tx_right">
   	  		  <span class="s2"></span>
   	  		  <h4>2017 - 2018 </h4>
@@ -48,7 +48,7 @@
   	  		  <p>相关项目详细介绍...</p>
   	  		</div>
   	  		<div class="clearfix"></div>
-  	  	</li>
+  	  	</li> -->
   	  </ul>
   	</div>
   </div>
@@ -91,4 +91,9 @@ export default {
 
   .tx_left{position:relative;text-align: left;box-sizing: border-box;border-left: 1px solid #999;}
   .tx_right{position:relative;text-align: right;box-sizing: border-box;}
+  .company{
+	  min-width: 200px;
+	  text-align: center;
+
+  }
 </style>

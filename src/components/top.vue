@@ -9,11 +9,11 @@
   	      <h1>{{info.name}}</h1>
   	      <h6 class="text_hidden">{{info.job}}</h6>
   	      <ul>
-  	        <li  class="text_hidden"><b>出生年月</b> <span>{{info.birth}}</span></li>
+  	        <li  class="text_hidden"><b>毕业年份</b> <span>{{info.birth}}</span></li>
   	        <li  class="text_hidden"><b>电子邮箱</b> <span>{{info.email}}</span></li>
   	        <li  class="text_hidden"><b>手机号码</b> <span>{{info.phone}}</span></li>
   	        <li  class="text_hidden"><b>联系地址</b> <span>{{info.address}}</span></li>
-  	        <li  class="text_hidden"><b>个人网站</b> <span>{{info.website}}</span></li>
+  	        <li  class="text_hidden"><b>github&nbsp;&nbsp;</b> <span>{{info.website}}</span></li>
   	      </ul>
   	    </div>
   	    <div class="clearfix"></div>
@@ -28,15 +28,36 @@ export default {
   data () {
     return {
       info: {
-      	"name": "I,m cisco lai",
-      	"job": "h5 Developer and Web Engineer",
-      	"birth": "19XX-10-08",
-      	"email": "6958XXX46@qq.com",
-      	"phone": "1772798XXXX",
-      	"address": "深圳市罗湖区xxx",
-      	"website": "https://vqlai.github.io/dist/#/index"
+      	"name": "施定宏",
+      	"job": "前端工程师    工作经验，两年",
+      	"birth": "2016年",
+      	"email": "377089304@qq.com",
+      	"phone": "13777804324",
+      	"address": "杭州市西湖区",
+      	"website": "https://github.com/sssdh1994"
       }
     }
+  },
+  created(){
+	//   this.getList()
+	// this.addList()
+  },
+  methods:{
+	  async getList(){
+		  const res = await this.axios.get('http://127.0.0.1:8360/student/')
+		  console.log(res)
+	  },
+	  async addList(){
+		  console.log('add')
+		  const addquery = {
+			name:'小黑',
+            sex:'男',
+            age:17,
+            major:'地理'
+		  }
+		  const res = await this.axios.post('http://127.0.0.1:8360/student/add',addquery)
+		  console.log(res)
+	  }
   }
 }
 </script>

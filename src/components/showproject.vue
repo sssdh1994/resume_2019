@@ -191,7 +191,7 @@ export default {
   .slide-9 {
     background-image:url('../common/images/vuecms/9.png');
   }
-  .slide-60 {
+  .slide-10 {
     background-image:url('../common/images/vuecms/10.png');
   }
   .slide-11 {

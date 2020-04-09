@@ -7,13 +7,14 @@
   	  <div class="content">
 		<div class="imgbox">
 			<div class="left">
-				<div v-on:mouseenter="getImage1"><img src="../common/images/wechaticon.png"></div>
-				<div v-on:mouseenter="getImage2"><img src="../common/images/qqicon.png"></div>
-				<div>三</div>
+				<div class ='iconwechat' v-on:mouseenter="getImageWechat"><img src="../common/images/wechaticon.png"></div>
+				<div class ='iconqq' v-on:mouseenter="getImageQq"><img src="../common/images/qqicon.png"></div>
+				<div class ='icongithub' v-on:mouseenter="getImageGithub"><img src="../common/images/githubicon.png"></div>
 			</div>
 			<div class="right">
-				<img v-show="showWechat" src="../common/images/test1.jpg">
-				<img v-show="!showWechat" src="../common/images/test2.jpg">
+				<img class ='img' v-show="showWechat" src="../common/images/wechatQR.jpg">
+				<img class ='img' v-show="showQq" src="../common/images/qqQR.jpg">
+				<img class ='img' v-show="showGithub" src="../common/images/githubQR.png">
 			</div>
 		</div>
   	    <dl>
@@ -35,16 +36,27 @@ export default {
     return {
     	title: '联系我',
 		desc: '© 2018 Preface . All rights reserved | Design by cisco lai.',
-		showWechat:true
+		showWechat:true,
+		showQq:false,
+		showGithub:false
 	}
   },
   methods:{
-	  getImage1(){
+	  getImageWechat(){
 		  this.showWechat = true
+		  this.showQq = false
+		  this.showGithub = false
 	  },
-	  getImage2(){
-		  this.showWechat = !this.showWechat 
+	  getImageQq(){
+		  this.showWechat = false 
+		  this.showQq = true
+		  this.showGithub = false
 	  },
+	  getImageGithub(){
+		  this.showWechat = false 
+		  this.showQq = false
+		  this.showGithub = true
+	  }
   }
 }
 </script>
@@ -79,7 +91,7 @@ export default {
 		width: 80px;
 		height: 80px;
 		border-radius: 4em;
-		background-color: grey;
+		
 		position: relative;
 		top:50px;
 	}
@@ -93,8 +105,24 @@ export default {
 	}
 	.right{
 		display: inline-block;
-		width: 50%;height: auto;
+		width: 270px;
+		height: auto;
 		border:1px black solid;
+	}
+	.img {
+		max-width: 134.5px;
+		max-height: 134.5px;
+		border:1px black solid;
+		text-align: left !important;
+	}
+	.iconwechat{
+		background-color: green;
+	}
+	.iconqq{
+		background-color: rgb(3, 169, 244);
+	}
+	.icongithub{
+		background-color: grey;
 	}
 	.content img{width: 50%;height: auto;margin: 15% 0;}
 	.content dl{border-top: 1px solid rgb(214, 212, 212);position: relative;padding-bottom: 20px;border:1px black solid;}

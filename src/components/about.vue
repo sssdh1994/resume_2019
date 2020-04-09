@@ -10,16 +10,16 @@
           <div class="parallax-bg" slot="parallax-bg" data-swiper-parallax="-23%"></div>
   	      <!-- slides -->
   	      <swiper-slide>
-  	        <p>您在找前端工程师？？</p>
+  	        <p class='ceshi'>您在找前端工程师？？</p>
   	      </swiper-slide>
   	      <swiper-slide>
-  	        <p>您真的来对了！！</p>
+  	        <p class='ceshi'>您真的来对了！！</p>
   	      </swiper-slide>
   	      <swiper-slide>
-  	        <p>我就是一名热爱前端开发，为前端痴狂的coder。</p>
+  	        <p class='ceshi'>我就是一名热爱前端开发，为前端痴狂的coder。</p>
   	      </swiper-slide>
   	      <swiper-slide>
-  	        <p>I Am The One!!</p>
+  	        <p class='ceshi'>I Am The One!!</p>
   	      </swiper-slide>
   	      <div class="swiper-pagination" slot="pagination"></div>
 	        <div class="swiper-button-prev" slot="button-prev"></div>
@@ -91,5 +91,11 @@ export default {
     background-size: 100%;
     background-position: center;
     background-image: url(../common/images/bijiben.jpeg);
+  }
+  .ceshi{
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    text-shadow:0px 0px 16px #fff
   }
 </style>
