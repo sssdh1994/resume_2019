@@ -113,7 +113,7 @@ export default {
 		max-width: 134.5px;
 		max-height: 134.5px;
 		border:1px black solid;
-		text-align: left !important;
+		
 	}
 	.iconwechat{
 		background-color: green;
