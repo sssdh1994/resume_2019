@@ -106,92 +106,92 @@ export default {
   
   .slide-1 {
     background-image:url('../common/images/wechat/1.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: repeat;
   }
   .slide-2 {
     background-image:url('../common/images/wechat/2.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-3 {
     background-image:url('../common/images/wechat/3.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-4 {
     background-image:url('../common/images/wechat/4.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-5 {
     background-image:url('../common/images/wechat/5.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-6 {
     background-image:url('../common/images/wechat/6.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-7 {
     background-image:url('../common/images/wechat/7.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-8 {
     background-image:url('../common/images/wechat/8.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-9 {
     background-image:url('../common/images/wechat/9.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-10 {
     background-image:url('../common/images/wechat/10.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-11 {
     background-image:url('../common/images/wechat/11.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-12 {
     background-image:url('../common/images/wechat/12.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-13 {
     background-image:url('../common/images/wechat/13.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-14 {
     background-image:url('../common/images/wechat/14.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-15 {
     background-image:url('../common/images/wechat/15.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
-  .slide-15 {
+  .slide-16 {
     background-image:url('../common/images/wechat/16.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
-  .slide-15 {
+  .slide-17 {
     background-image:url('../common/images/wechat/17.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
-  .slide-15 {
+  .slide-18 {
     background-image:url('../common/images/wechat/18.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: no-repeat;
   }
   .gallery-top {
