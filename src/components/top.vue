@@ -3,7 +3,7 @@
   	<div class="container">
   		<slot></slot>
   	  <div class="banner">
-  	    <div class="avator"><img src="../common/images/avator.jpg" alt=""></div>
+  	    <div class="avator"><img src="../common/images/touxiang.jpg" alt=""></div>
   	    <div class="info">
   	      <h5 class="hello">Hello</h5>
   	      <h1>{{info.name}}</h1>
@@ -41,6 +41,7 @@ export default {
   created(){
 	//   this.getList()
 	// this.addList()
+	console.log('感谢参观，若有需要，可以QQ联系-377089304')
   },
   methods:{
 	  async getList(){

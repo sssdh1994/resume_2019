@@ -21,20 +21,32 @@ export default {
     return {
       title: '我的项目',
       projectData:[
-        {title:'项目1',src:"/static/test3.jpg"},
-        {title:'项目2',src:"/static/test3.jpg"},
-        {title:'项目3',src:"/static/test3.jpg"},
-        {title:'项目4',src:"/static/test3.jpg"}
+        {title:'项目1',src:"/static/cms1.png"},
+        {title:'项目2',src:"/static/wechat1.png"},
+        {title:'项目3',src:"/static/yipai1.png"},
+        
       ],
 
     }
   },
   methods:{
     showProject(index){
-      this.$router.push({
-        name: "ShowProject",
+      if(index == 0){
+        this.$router.push({
+        name: "ShowProjectCms",
         query:{index:index}
-      });
+        })
+      }else if(index == 1){
+        this.$router.push({
+        name: "ShowProjectWechat",
+        query:{index:index}
+        })
+      }else{
+        this.$router.push({
+        name: "ShowProjectYipai",
+        query:{index:index}
+        })
+      }
     }
   }
 }
@@ -59,7 +71,8 @@ export default {
   .border:after{position: absolute;top: 0;left: 30%;content: " ";width: 40%;height: 5px;margin-top:-2px;background: #03a9f4;}
 
   ul{width: 100%;padding: 4% 0;}
-  ul li{float: left;width: 20%;margin-right: 5%;height: 80%;box-sizing: border-box;transition: transform .25s ease;}
-  ul li img{width: 100%;display: block;}
+  ul li{float: left;width: 28%;margin-right: 5%;height: 80%;box-sizing: border-box;transition: transform .25s ease;}
+  /* ul li img{width: 100%;display: block;} */
+  ul li img{width: 340px;height:180px;display: block;}
   ul li:hover{z-index: 100; -webkit-transform: scale(1.1); transform: scale(1.2); box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);} 
 </style>

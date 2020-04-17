@@ -6,8 +6,8 @@
         <swiper-slide v-for="item in items" :key="item.id" :class="item.class"></swiper-slide>
    
 
-        <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
-        <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
+        <div class="swiper-button-next swiper-button-blue" slot="button-next"></div>
+        <div class="swiper-button-prev swiper-button-blue" slot="button-prev"></div>
       </swiper>
       <!-- swiper2 Thumbs -->
       <swiper :options="swiperOptionThumbs" class="gallery-thumbs" ref="swiperThumbs">
@@ -162,52 +162,82 @@ export default {
   }
   swiper-slide {
     background-size: cover;
-    background-position: center;
+    background-position: no-repeat;
   }
   .slide-1 {
     background-image:url('../common/images/vuecms/1.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .slide-2 {
     background-image:url('../common/images/vuecms/2.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .slide-3 {
     background-image:url('../common/images/vuecms/3.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .slide-4 {
     background-image:url('../common/images/vuecms/4.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .slide-5 {
     background-image:url('../common/images/vuecms/5.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .slide-6 {
     background-image:url('../common/images/vuecms/6.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .slide-7 {
     background-image:url('../common/images/vuecms/7.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .slide-8 {
     background-image:url('../common/images/vuecms/8.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .slide-9 {
     background-image:url('../common/images/vuecms/9.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .slide-10 {
     background-image:url('../common/images/vuecms/10.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .slide-11 {
     background-image:url('../common/images/vuecms/11.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .slide-12 {
     background-image:url('../common/images/vuecms/12.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .slide-13 {
     background-image:url('../common/images/vuecms/13.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .slide-14 {
     background-image:url('../common/images/vuecms/14.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .slide-15 {
     background-image:url('../common/images/vuecms/15.png');
+    background-size: cover;
+    background-position: no-repeat;
   }
   .gallery-top {
     height: 80%!important;
@@ -226,4 +256,5 @@ export default {
   .gallery-thumbs .swiper-slide-active {
     opacity: 1;
   }
+
 </style>

@@ -4,7 +4,9 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const Home = () => import('@/pages/home/home')
-const showproject = () => import('@/components/showproject')
+const showprojectcms = () => import('@/components/showprojectcms')
+const showprojectwechat = () => import('@/components/showprojectwechat')
+const showprojectyipai = () => import('@/components/showprojectyipai')
 export default new Router({
 	// mode: 'history',
   routes: [
@@ -18,9 +20,20 @@ export default new Router({
       component: Home
     },
     {
-      path: '/showproject',
-      name: 'ShowProject',
-      component: showproject
+      path: '/showprojectcms',
+      name: 'ShowProjectCms',
+      component: showprojectcms
+    },
+    {
+      path: '/showprojectwechat',
+      name: 'ShowProjectWechat',
+      component: showprojectwechat
+    },
+    {
+      path: '/showprojectyipai',
+      name: 'ShowProjectYipai',
+      component: showprojectyipai
     }
+    
   ]
 })

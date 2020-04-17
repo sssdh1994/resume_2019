@@ -19,8 +19,8 @@
 		</div>
   	    <dl>
   	      <dt>Contact By Email</dt>
-  	      <dd>Mail1: <a href="mailto:info@example.com">info@example1.com</a></dd>
-  	      <dd>Mail2: <a href="mailto:info@example.com">info@example2.com</a></dd>
+  	      <dd>qqMail: <a href="https://mail.qq.com/" target="blank">377089304@qq.com</a></dd>
+  	      <dd>github: <a href="https://github.com/sssdh1994" target="blank">https://github.com/sssdh1994</a></dd>
   	    </dl>
   	  </div>
   	  <p v-text="desc"></p>
@@ -35,7 +35,7 @@ export default {
   data () {
     return {
     	title: '联系我',
-		desc: '© 2018 Preface . All rights reserved | Design by cisco lai.',
+		desc: '© 2020 Preface . All rights reserved | Design by MR Shi.',
 		showWechat:true,
 		showQq:false,
 		showGithub:false

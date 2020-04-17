@@ -19,7 +19,7 @@
   	        <p class='ceshi'>我就是一名热爱前端开发，为前端痴狂的coder。</p>
   	      </swiper-slide>
   	      <swiper-slide>
-  	        <p class='ceshi'>I Am The One!!</p>
+  	        <p class='ceshi'>我也许就是您要找的那个人！</p>
   	      </swiper-slide>
   	      <div class="swiper-pagination" slot="pagination"></div>
 	        <div class="swiper-button-prev" slot="button-prev"></div>

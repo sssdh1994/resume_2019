@@ -20,18 +20,17 @@ export default {
   name: 'skill',
   data () {
     return {
-    	title: '我的技能',
+    	title: '我的主修',
     	skill: [
     		{"type": "html/html5","percent": "90%"},
-    		{"type": "js/jquery","percent": "80%"},
+    	
     		{"type": "css/css3","percent": "80%"},
-    		{"type": "sass/less","percent": "60%"},
-    		{"type": "photoshop","percent": "90%"},
+    		{"type": "elementUI","percent": "60%"},
     		{"type": "bootstrap","percent": "80%"},
-    		{"type": "swiper","percent": "80%"},
-    		{"type": "seajs","percent": "80%"},
-    		{"type": "vuejs","percent": "60%"},
-    		{"type": "java/jsp","percent": "50%"}
+    		{"type": "antd","percent": "80%"},
+    		{"type": "vuejs","percent": "80%"},
+    		{"type": "react","percent": "60%"},
+    		{"type": "小程序","percent": "50%"}
     	]
     }
   },
