@@ -29,7 +29,7 @@ export default {
     return {
       info: {
       	"name": "施定宏",
-      	"job": "前端工程师    工作经验，两年",
+      	"job": "前端工程师    工作经验，三年",
       	"birth": "2016年",
       	"email": "377089304@qq.com",
       	"phone": "13777804324",

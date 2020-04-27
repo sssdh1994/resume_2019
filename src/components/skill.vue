@@ -22,15 +22,15 @@ export default {
     return {
     	title: '我的主修',
     	skill: [
-    		{"type": "html/html5","percent": "90%"},
+    		{"type": "html/html5","percent": "85%"},
     	
-    		{"type": "css/css3","percent": "80%"},
-    		{"type": "elementUI","percent": "60%"},
-    		{"type": "bootstrap","percent": "80%"},
+			{"type": "css/css3","percent": "85%"},
+			{"type": "javascript","percent": "75%"},
+    		{"type": "elementUI","percent": "80%"},
     		{"type": "antd","percent": "80%"},
-    		{"type": "vuejs","percent": "80%"},
+    		{"type": "vuejs","percent": "70%"},
     		{"type": "react","percent": "60%"},
-    		{"type": "小程序","percent": "50%"}
+    		{"type": "小程序","percent": "80%"}
     	]
     }
   },

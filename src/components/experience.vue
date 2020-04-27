@@ -19,7 +19,7 @@
   	  	<li>
   	  		<div class="content_left tx_right">
   	  		  <span class="s2"></span>
-  	  		  <h4>2018 - 2018 </h4>
+  	  		  <h4>2017 - 2018 </h4>
   	  		</div>
   	  		<div class="content_right tx_left">
   	  		  <h4 class="company">杭州大喵科技有限公司</h4>
@@ -34,7 +34,7 @@
   	  		</div>
   	  		<div class="content_right tx_left">
   	  		  <h4 class="company">杭州至远科技有限公司</h4>
-  	  		  <p>cms管理后台、商城微信小程序</p>
+  	  		  <p>cms管理后台、商城微信小程序、地图呼叫系统、体温检测系统</p>
   	  		</div>
   	  		<div class="clearfix"></div>
   	  	</li>

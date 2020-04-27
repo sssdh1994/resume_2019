@@ -163,6 +163,7 @@ export default {
      text-align:center;
      width: 15%;
      margin-left:30% ;
+     margin-top:50px  ;
      border: black 1px solid;
   }
   .button:hover{
@@ -177,6 +178,7 @@ export default {
      text-align:center;
      width: 15%;
      margin-left:10% ;
+     margin-top:50px  ;
      border: black 1px solid;
   }
   .button-right:hover{

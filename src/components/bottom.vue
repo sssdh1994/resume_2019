@@ -93,7 +93,7 @@ export default {
 		border-radius: 4em;
 		
 		position: relative;
-		top:50px;
+		top:70px;
 	}
 	.left div img{
 		width: 40px;
@@ -107,7 +107,7 @@ export default {
 		display: inline-block;
 		width: 270px;
 		height: auto;
-		border:1px black solid;
+		border-left:1px  rgb(214, 212, 212) solid;
 	}
 	.img {
 		max-width: 134.5px;
@@ -125,7 +125,7 @@ export default {
 		background-color: grey;
 	}
 	.content img{width: 50%;height: auto;margin: 15% 0;}
-	.content dl{border-top: 1px solid rgb(214, 212, 212);position: relative;padding-bottom: 20px;border:1px black solid;}
+	.content dl{border-top: 1px solid rgb(214, 212, 212);position: relative;padding-bottom: 20px;}
 	.content dl:after{position: absolute;top: 8%;left: 48%;content: "";width: 16px;height: 16px;background: url('../common/images/email.png') no-repeat;background-size: 100% auto;}
 	.content dt{font-size: 16px;margin: 30px 0 10px;}
 	.content dd{font-size: 18px;color: #999;margin-top: 10px;}

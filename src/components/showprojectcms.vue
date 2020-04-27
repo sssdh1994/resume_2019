@@ -202,6 +202,7 @@ export default {
      background-color:rgb(62, 158, 255);
      text-align:center;
      width: 15%;
+     margin-top:50px  ;
      margin-left:30% ;
      border: black 1px solid;
   }
@@ -216,6 +217,7 @@ export default {
      background-color:rgb(62, 158, 255);
      text-align:center;
      width: 15%;
+     margin-top:50px  ;
      margin-left:10% ;
      border: black 1px solid;
   }
