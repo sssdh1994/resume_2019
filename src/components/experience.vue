@@ -19,7 +19,7 @@
   	  	<li>
   	  		<div class="content_left tx_right">
   	  		  <span class="s2"></span>
-  	  		  <h4>2017 - 2018 </h4>
+  	  		  <h4>2018 - 2018 </h4>
   	  		</div>
   	  		<div class="content_right tx_left">
   	  		  <h4 class="company">杭州大喵科技有限公司</h4>
@@ -38,13 +38,24 @@
   	  		</div>
   	  		<div class="clearfix"></div>
   	  	</li>
-  	  	<!-- <li>
+  	  	<li>
   	  		<div class="content_left tx_right">
   	  		  <span class="s2"></span>
+  	  		  <h4>2020 - 2021 </h4>
+  	  		</div>
+  	  		<div class="content_right tx_left">
+  	  		  <h4>杭州携银科技有限公司</h4>
+  	  		  <p>婚奢会后台管理系统</p>
+  	  		</div>
+  	  		<div class="clearfix"></div>
+  	  	</li>
+			<!-- <li>
+  	  		<div class="content_left tx_right">
+  	  		  <span class="s1"></span>
   	  		  <h4>2017 - 2018 </h4>
   	  		</div>
   	  		<div class="content_right tx_left">
-  	  		  <h4>公司名4</h4>
+  	  		  <h4>公司名5</h4>
   	  		  <p>相关项目详细介绍...</p>
   	  		</div>
   	  		<div class="clearfix"></div>

@@ -14,6 +14,7 @@
         <swiper-slide v-for="item in items" :key="item.id" :class="item.class"></swiper-slide>
 
       </swiper>
+
       <div class="button"  @click='goBackPage'>返回首页</div>
       <div class="button-right"  @click='goToNextProject'>下个项目</div>
     </div>
@@ -33,17 +34,7 @@ export default {
         {class:"slide-2"},
         {class:"slide-3"},
         {class:"slide-4"},
-        {class:"slide-5"},
-        {class:"slide-6"},
-        {class:"slide-7"},
-        {class:"slide-8"},
-        {class:"slide-9"},
-        {class:"slide-10"},
-        {class:"slide-11"},
-        {class:"slide-12"},
-        {class:"slide-13"},
-        {class:"slide-14"},
-        {class:"slide-15"}
+  
       ],
       swiperOptionTop: {
         spaceBetween: 10,
@@ -87,7 +78,7 @@ export default {
     },
     goToNextProject(){
       this.$router.push({
-        name: "ShowProjectHunSheHui",
+        name: "ShowProjectWechat",
       })
     }
   }
@@ -101,83 +92,48 @@ export default {
   }
   swiper-slide {
     background-size: cover;
-    background-position: no-repeat;
+    /* background-position: no-repeat; */
   }
   .slide-1 {
-    background-image:url('../common/images/vuecms/1.png');
-    background-size: 100% 100%;
-    background-position: no-repeat;
+    background-image:url('../common/images/hunshehui/1.png');
+    background-size: cover;
+    /* background-position: no-repeat; */
   }
   .slide-2 {
-    background-image:url('../common/images/vuecms/2.png');
+    background-image:url('../common/images/hunshehui/2.png');
     background-size: 100% 100%;
-    background-position: no-repeat;
+    /* background-position: no-repeat; */
   }
   .slide-3 {
-    background-image:url('../common/images/vuecms/3.png');
+    background-image:url('../common/images/hunshehui/3.png');
     background-size: 100% 100%;
-    background-position: no-repeat;
+    /* background-position: no-repeat; */
   }
   .slide-4 {
-    background-image:url('../common/images/vuecms/4.png');
+    background-image:url('../common/images/hunshehui/4.png');
     background-size: 100% 100%;
-    background-position: no-repeat;
+    /* background-position: no-repeat; */
   }
-  .slide-5 {
-    background-image:url('../common/images/vuecms/5.png');
+  /* .slide-5 {
+    background-image:url('../common/images/hunshehui/5.png');
     background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-6 {
-    background-image:url('../common/images/vuecms/6.png');
+    background-image:url('../common/images/hunshehui/6.png');
     background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-7 {
-    background-image:url('../common/images/vuecms/7.png');
+    background-image:url('../common/images/hunshehui/7.png');
     background-size: 100% 100%;
     background-position: no-repeat;
   }
   .slide-8 {
-    background-image:url('../common/images/vuecms/8.png');
+    background-image:url('../common/images/hunshehui/8.png');
     background-size: 100% 100%;
     background-position: no-repeat;
-  }
-  .slide-9 {
-    background-image:url('../common/images/vuecms/9.png');
-    background-size: 100% 100%;
-    background-position: no-repeat;
-  }
-  .slide-10 {
-    background-image:url('../common/images/vuecms/10.png');
-    background-size: 100% 100%;
-    background-position: no-repeat;
-  }
-  .slide-11 {
-    background-image:url('../common/images/vuecms/11.png');
-    background-size: 100% 100%;
-    background-position: no-repeat;
-  }
-  .slide-12 {
-    background-image:url('../common/images/vuecms/12.png');
-    background-size: 100% 100%;
-    background-position: no-repeat;
-  }
-  .slide-13 {
-    background-image:url('../common/images/vuecms/13.png');
-    background-size: 100% 100%;
-    background-position: no-repeat;
-  }
-  .slide-14 {
-    background-image:url('../common/images/vuecms/14.png');
-    background-size: 100% 100%;
-    background-position: no-repeat;
-  }
-  .slide-15 {
-    background-image:url('../common/images/vuecms/15.png');
-    background-size: 100% 100%;
-    background-position: no-repeat;
-  }
+  } */
   .gallery-top {
     height: 80%!important;
     width: 100%;
@@ -202,13 +158,13 @@ export default {
      background-color:rgb(62, 158, 255);
      text-align:center;
      width: 15%;
-     margin-top:50px  ;
      margin-left:30% ;
+     margin-top:50px  ;
      border: black 1px solid;
   }
   .button:hover{
      background-color:rgb(102, 177, 255);
-    cursor:pointer;
+     cursor:pointer;
   }
   .button-right{
     display: inline-block;
@@ -217,12 +173,12 @@ export default {
      background-color:rgb(62, 158, 255);
      text-align:center;
      width: 15%;
-     margin-top:50px  ;
      margin-left:10% ;
+     margin-top:50px  ;
      border: black 1px solid;
   }
   .button-right:hover{
-    cursor:pointer;
      background-color:rgb(102, 177, 255);
+     cursor:pointer;
   }
 </style>

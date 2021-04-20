@@ -7,6 +7,7 @@ const Home = () => import('@/pages/home/home')
 const showprojectcms = () => import('@/components/showprojectcms')
 const showprojectwechat = () => import('@/components/showprojectwechat')
 const showprojectyipai = () => import('@/components/showprojectyipai')
+const showprojecthunshehui = () => import('@/components/showprojecthunshehui')
 export default new Router({
 	// mode: 'history',
   routes: [
@@ -33,7 +34,11 @@ export default new Router({
       path: '/showprojectyipai',
       name: 'ShowProjectYipai',
       component: showprojectyipai
+    },
+    {
+      path: '/showprojecthunshehui',
+      name: 'ShowProjectHunSheHui',
+      component: showprojecthunshehui
     }
-    
   ]
 })
